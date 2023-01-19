@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+**Assign the `support` label to any support escalation issues**
+
 **Describe the bug**
 A clear and concise description of what the bug is. Please include the following:
 - account address =
