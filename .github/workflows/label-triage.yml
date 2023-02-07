@@ -1,0 +1,15 @@
+name: "Add Triage label"
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+      
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/label-actions@v3
+        with:
+          process-only: 'issues'
+          config-path: '.github/label-triage.yml'
