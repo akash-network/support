@@ -40,7 +40,7 @@ nodes.akash.pro has address 65.108.6.185
 ```
 
 - More info on what DNS records should look like are available in the [Akash Documentation here](https://docs.akash.network/providers/build-a-cloud-provider/akash-cloud-provider-build-with-helm-charts/step-5-domain-name-review).
-- Please make sure your Akash provider doesn't block these ports
+- Please make sure your Akash provider doesn't block any Akash specific ports.
 - If you are using a firewall, please follow this doc:
 https://docs.akash.network/providers/build-a-cloud-provider/akash-cloud-provider-build-with-helm-charts/step-9-firewall-rule-review
 - If you are behind NAT, then you need to make sure these ports are open between your provider worker nodes and the internet.
