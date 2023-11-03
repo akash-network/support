@@ -6,9 +6,9 @@ labels: Provider Audit
 assignees: andy108369
 
 ---
-# Prerequisite Steps:
+## Prerequisite Steps:
 
-1. Make sure your provider has community provider attributes:
+### 1. Make sure your provider has community provider attributes:
 
 ```
   Example:
@@ -25,7 +25,7 @@ assignees: andy108369
 
 [Ref documentation:](https://docs.akash.network/providers/akash-audited-attributes#standard-attributes).
 
-2. Make sure your provider *.ingress resolves to your provider IP (ideally worker node IP)
+### 2. Make sure your provider *.ingress resolves to your provider IP (ideally worker node IP)
 ```
 host <anything>.ingress.<yourdomain>
 ```
@@ -39,7 +39,7 @@ nodes.akash.pro has address 65.108.6.185
 
 - More info on what DNS records should look like are available in the [Akash Documentation here](https://docs.akash.network/providers/build-a-cloud-provider/akash-cloud-provider-build-with-helm-charts/step-5-domain-name-review).
 
-3. Please make sure your Akash provider doesn't block any Akash specific ports.
+### 3. Please make sure your Akash provider doesn't block any Akash specific ports.
    
 - If you are using a firewall, please follow this doc:
 https://docs.akash.network/providers/build-a-cloud-provider/akash-cloud-provider-build-with-helm-charts/step-9-firewall-rule-review
@@ -47,13 +47,12 @@ https://docs.akash.network/providers/build-a-cloud-provider/akash-cloud-provider
 
 
 
-
 # Audit Steps:
 
-- ***Title the issue: " [Provider Audit]: Provider Address" (e.g. "[Provider Audit]: provider.europlots.com")***
-- Wait for response via comments. If no issues during provider Audit, process will be complete, provider should start bidding on leases, and Audit ticket will be closed.
-- If there are issues during the provider Audit, debug those issues, and Audit will be complete.
-- Audit Issue will be closed by core team member.
+#### 1. ***Title the issue: " [Provider Audit]: Provider Address" (e.g. "[Provider Audit]: provider.europlots.com")***
+#### 2. Wait for response via comments. If no issues during provider Audit, process will be complete, provider should start bidding on leases, and Audit ticket will be closed.
+#### 3. If there are issues during the provider Audit, debug those issues, and Audit will be complete.
+#### 4. Audit Issue will be closed by core team member.
   
 
 ## Leave contact information (optional)
