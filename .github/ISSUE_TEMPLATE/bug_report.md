@@ -2,8 +2,8 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: 'awaiting-triage'
-assignees:
+labels: awaiting-triage, testnet-5
+assignees: ''
 
 ---
 
