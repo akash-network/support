@@ -4,12 +4,16 @@ on:
     types:
       - reopened
       - opened
-      
+
+permissions:
+  issues: write
+
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: dessant/label-actions@v3
-        with:
-          process-only: 'issues'
-          config-path: '.github/label-triage.yml'
+      - name: Add awaiting-triage label
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue edit "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --add-label awaiting-triage
